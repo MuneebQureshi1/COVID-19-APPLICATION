@@ -195,7 +195,7 @@ function Favorite_Countries({ route,navigation }) {
   }
   const showstat=(item)=>{
        console.log("Its here",item)
-       navigation.navigate('CountryStat',{
+       navigation.navigate('Country Statistics',{
          country: item
           })
      }
