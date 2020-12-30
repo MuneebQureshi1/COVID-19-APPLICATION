@@ -273,7 +273,7 @@ function Stats_By_Country({ navigation }) {
   }
     const showstat=(item)=>{
        console.log("Its here",item)
-       navigation.navigate('CountryStat',{
+       navigation.navigate('Country Statistics',{
          country: item
           })
      }
@@ -334,9 +334,8 @@ axios.request(options).then(function (response) {
         renderItem={({item})=>(<View>
         <TouchableOpacity  style={styles.appButton} >
         <View style={{flexDirection:"row"}}>
-        <Text onPress={()=>{showstat(item)}} style={styles.fortext2}>{item}{item.check}</Text>
-        <View style={{padding:25}}/>
-        <Icon3 onPress={()=>{addfitem(item)}} size={30} name="star-outlined" color={'yellow'}></Icon3>
+        <Text onPress={()=>{showstat(item)}}  style={styles.fortext2}>{item}{item.check}</Text>
+         <Icon3 onPress={()=>{addfitem(item)}} size={25}  name="star-outlined" color={'yellow'}></Icon3>
 
         </View>
                 </TouchableOpacity>
